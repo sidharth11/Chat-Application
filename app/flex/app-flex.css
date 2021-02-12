@@ -1,0 +1,48 @@
+.app-message{
+    display: flex;
+}
+.app-message-contact{
+    flex: 1;
+}
+
+
+@media only screen and (max-width:900px){
+    .app-chats{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width:901px) {
+         .app-container {
+             display: flex;
+
+         }
+         .app-contacts {
+            flex: 1;
+            border-right: solid 1px silver;
+            overflow: scroll;
+         }
+         .app-chats {
+             flex: 2;
+         }
+         .app-chat-header {
+             min-height: 5vh;
+             background-color: gray;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             text-align: center;
+         }
+         .app-chats .app-message .app-avatar {
+             border-radius: 50%;
+         }
+         .app-chat-active{
+             background-color: gray;
+         }
+         .app-contact,
+         .app-chats {
+         height: 100vh;
+         overflow: scroll;
+         }
+}
